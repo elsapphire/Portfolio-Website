@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Personal Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Home</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+
+<!--        <header class="masthead">-->
+<!--            <div class="container">-->
+<!--                <div class="masthead-subheading">Welcome To Our Studio!</div>-->
+<!--                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>-->
+<!--                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>-->
+<!--            </div>-->
+<!--        </header>-->
+<!--        lll-->
+
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="row gx-5 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="text-center">
+                        <img class="masthead-avatar" src="{{ url_for('static', filename='assets/img/avataaars.svg') }}" alt="...">
+                        <h1 class="mb-1">I'm Success</h1>
+                        <hr class="divider" />
+                        <h2 class="text-white-75 mb-4">A professional python developer proficient in Python Scripting, Graphical User Interface(GUI)
+                            Data Analysis with Pandas, Numpy and Data Visualization, Back-end web development with the Flask and Jinja Framework.</h2>
+                        <a class="btn btn-primary" href="#about">About me</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">About Me</h2>
+                        <p class="text-white-50">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus sed erat condimentum mattis. Aliquam luctus nisi vitae leo rutrum cursus. Nunc bibendum nisl nec dui aliquet tristique. Nam eget vehicula ligula. Mauris a commodo turpis, quis ullamcorper orci. Sed luctus quis velit porttitor gravida. Suspendisse sit amet sollicitudin sapien, ac dictum ligula. Sed a consequat nisl. Nulla pulvinar ante tortor, id sollicitudin tortor laoreet eget. Phasellus feugiat elit fermentum blandit imperdiet. Duis vestibulum scelerisque felis, vel iaculis dui posuere at. Mauris euismod molestie consectetur.
+                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/ipad.png') }}" alt="..." />
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center">Projects</h2>
+            <hr class="divider" />
+                <!-- Featured Project Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{ url_for('static', filename='assets/img/stock_track_pic.png') }}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-black">Stock Trackify</h4>
+                                    <p class="mb-0 text-black-50">A software that tracks any stock you want on the stock market and gives you notificatiions in the form of SMS or email when there's any major change in the selling/buying price of the stock.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                lll-->
+
+<!--                lll-->
+
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{ url_for('static', filename='assets/img/blog pic.jpg') }}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-black">People's Blog</h4>
+                                    <p class="mb-0 text-black-50">A blog built with Bootstrap Front end and Flask, Jinja Back end. The blog data is stored in an SQLite Database hosted on heroku.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                lll-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{ url_for('static', filename='assets/img/spotify_time_pic.jpg') }}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-black">Spotify Time Machine</h4>
+                                    <p class="mb-0 text-black-50">A software that automatically generates a playlist from the billboard top 100 of any year you specify. Lets you travel back in time, musically.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                lllll-->
+<!--                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">-->
+<!--                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('static', filename='assets/img/spotify_time_pic.jpg') }}" alt="..." /></div>-->
+<!--                    <div class="col-xl-4 col-lg-5">-->
+<!--                        <div class="featured-text text-center text-lg-left">-->
+<!--                            <h4>Spotify Time Machine</h4>-->
+<!--                            <p class="text-black-50 mb-0">A software that automatically generates a playlist from the billboard top 100 of any year you specify. Lets you travel back in time, musically.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <!-- Project One Row-->
+                <!-- Project Two Row-->
+
+            </div>
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Have questions? I have answers!</h2>
+                        <p class="text-white mb-5">Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+                          <div class="container">
+                        <div class="row">
+                          <div class="col-lg-8 col-md-10 mx-auto">
+                            <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+                            <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                            <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                            <form name="sentMessage" id="contactForm" method="POST">
+                              <div class="control-group">
+                                <div class="form-group floating-label-form-group controls">
+                                  <input type="text" class="form-control" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                                  <p class="help-block text-danger"></p>
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <div class="form-group floating-label-form-group controls">
+                                  <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                  <p class="help-block text-danger"></p>
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <input type="tel" class="form-control" placeholder="Phone Number" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                  <p class="help-block text-danger"></p>
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <div class="form-group floating-label-form-group controls">
+                                  <textarea rows="5" class="form-control" placeholder="Message" id="message" name="message" required data-validation-required-message="Please enter a message."></textarea>
+                                  <p class="help-block text-danger"></p>
+                                </div>
+                              </div>
+                              <br>
+                              <div id="success"></div>
+                              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+<!--                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">-->
+<!--                            &lt;!&ndash; Email address input&ndash;&gt;-->
+<!--                            <div class="row input-group-newsletter">-->
+<!--                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>-->
+<!--                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>-->
+<!--                            </div>-->
+<!--                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>-->
+<!--                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>-->
+<!--                            &lt;!&ndash; Submit success message&ndash;&gt;-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+<!--                            <div class="d-none" id="submitSuccessMessage">-->
+<!--                                <div class="text-center mb-3 mt-2 text-white">-->
+<!--                                    <div class="fw-bolder">Form submission successful!</div>-->
+<!--                                    To activate this form, sign up at-->
+<!--                                    <br />-->
+<!--                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+<!--                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>-->
+<!--                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Abuja, NG</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">successabalaka2002@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+234 (901) 104-9870</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="https://twitter.com/ellsapphire"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="https://web.facebook.com/sapphire.abalaka"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://github.com/elsapphire"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5"> &copy; 2023 Success Abalaka. All Rights Reserved</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
